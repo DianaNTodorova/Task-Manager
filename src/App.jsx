@@ -3,6 +3,7 @@ import NewProject from './components/Newproject.jsx';
 import NoProjectSelected from './components/NoProjectSelected.jsx';
 import ProjectSideBar from './components/ProjectSideBar.jsx';
 import SelectedProject from './components/SelectedProject.jsx';
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 function App() {
   const [selectProjects, setSelectProjects] = useState({
@@ -124,7 +125,7 @@ function App() {
   }
 
   return (
-    <main className="h-screen my-8 flex gap-8">
+    <main className="h-screen flex gap-8">
       <ProjectSideBar
         onStartAddingProject={handleAddSelectedProjects}
         projects={selectProjects.projects}

@@ -7,14 +7,14 @@ export default function NoProjectSelected({ onStartAddingProject }) {
       <img
         src={noProjectImage}
         alt="An empty image project"
-        className="w-16 h-16 object-contain mx-auto"
+        className="w-52 h-52 object-contain mx-auto"
       />
-      <h2 className="text-xl font-bold text-stone-500 my-4">
+      <h2 className="text-xl font-bold text-customBlue my-4">
         No Project Selected
       </h2>
-      <p className="text-stone-400 mb-4">
+      {/*<p className="text-stone-400 mb-4">
         Select a project or get started with a new one
-      </p>
+  </p> */}
       <p className="mt-8">
         <Button onClick={onStartAddingProject}>Create new project</Button>
       </p>
